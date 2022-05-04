@@ -1,0 +1,35 @@
+$cor-1:#64607D;
+$cor-2: #D3D0E3;
+$cor-3: #434151;
+$cor-4: #E6E6E6;
+
+@function rem($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1rem;
+}
+
+@mixin font-titulo($color) {
+  font-family: 'Italiana', serif;
+  font-size: rem(60);
+  color: $color;
+
+  @include tlabet {
+    font-size: rem(45);
+  }
+
+  @include mobile {
+    font-size: rem(36);
+  }
+}
+
+
+@mixin tlabet {
+  @media (max-width:950px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width:450px) {
+    @content;
+  }
+}

@@ -1,0 +1,70 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-left: 180px;
+
+  @include tlabet {
+    margin-left: 150px;
+  }
+
+  @include mobile {
+    margin-left: 78px;
+  }
+}
+
+.about {
+  padding: 80px 20px;
+
+  h1 {
+    @include font-titulo($cor-1);
+  }
+
+  p {
+    font-size: rem(24);
+    color: $cor-3;
+    max-width: 60ch;
+    padding-top: rem(60);
+
+    @include tlabet {
+      font-size: rem(20);
+    }
+
+    @include mobile {
+      padding-top: rem(20);
+      font-size: rem(16);
+    }
+  }
+
+  #btn-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    color: $cor-4;
+    margin-top: rem(30);
+    background-color: $cor-1;
+    border: 2px solid $cor-1;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      color: $cor-3;
+      background-color: transparent;
+      border: 2px solid $cor-1;
+    }
+
+    @include mobile {
+      padding: 8px 12px;
+      font-size: rem(14);
+    }
+  }
+}
+
+.dark #btn-cv {
+  background-color: $cor-2;
+  border: 2px solid $cor-2;
+  color: $cor-3;
+
+  &:hover {
+    color: $cor-4;
+    background-color: transparent;
+    border: 2px solid $cor-2;
+  }
+}

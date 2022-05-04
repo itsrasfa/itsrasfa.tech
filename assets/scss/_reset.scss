@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: $cor-2;
+}
+
+body.dark {
+  background-color: $cor-1;
+}
+
+.dark .sidebar span {
+  color: $cor-2;
+}
+
+
+.dark .about h1,
+.dark .tecnologias h1,
+.dark .projetos h1,
+.dark .contato h1 {
+  @include font-titulo($cor-2);
+}
+
+.dark .about p,
+.dark .tecnologias p,
+.dark .projetos p,
+.dark .contato p {
+  color: $cor-4;
+}
+
+i {
+  color: $cor-1;
+  font-size: rem(50);
+}
+
+.dark i {
+  color: $cor-2;
+}
+
+
+img[src$=".png"] {
+  width: 100%;
+  object-fit: cover;
+}
+
+i {
+  cursor: pointer;
+}

@@ -1,0 +1,99 @@
+.tecnologias-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: rem(60);
+
+  @include mobile {
+    padding-top: rem(20);
+  }
+
+  p {
+    color: $cor-3;
+    font-size: rem(20);
+
+    @include mobile {
+      font-size: rem(16);
+    }
+  }
+
+}
+
+.tecnologias {
+  padding: 80px 20px;
+
+  i {
+    @include mobile {
+      font-size: rem(40);
+    }
+  }
+
+  h1 {
+    @include font-titulo($cor-1);
+  }
+
+  .habilidades {
+    display: flex;
+    gap: rem(20);
+    padding-top: rem(40);
+  }
+
+  .more {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(100);
+    row-gap: rem(50);
+    margin-top: rem(40);
+
+    h2 {
+      margin-bottom: rem(20);
+      color: $cor-3;
+      font-weight: 400;
+
+      @include mobile {
+        font-size: rem(18);
+      }
+    }
+  }
+}
+
+.dark {
+  .more h2 {
+    color: $cor-4;
+  }
+}
+
+.tech {
+  display: flex;
+  gap: rem(20);
+}
+
+.tooltip {
+  display: none;
+}
+
+.tooltip.ativo {
+  display: block;
+  background-color: lighten($cor-1, 20%);
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: opacity 0.3s ease-in;
+
+  h2 {
+    color: $cor-3;
+    margin-bottom: 5px;
+  }
+}
+
+.dark .tooltip.ativo {
+  background-color: darken($cor-1, 5%);
+
+  h2 {
+    color: $cor-2;
+  }
+}
+
+progress {
+  color: $cor-1;
+}

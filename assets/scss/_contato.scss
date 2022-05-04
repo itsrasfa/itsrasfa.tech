@@ -1,0 +1,30 @@
+.contato {
+  padding: 80px 20px;
+
+  h1 {
+    @include font-titulo($cor-1);
+    padding-bottom: rem(60);
+
+    @include mobile {
+      padding-bottom: rem(20);
+    }
+  }
+
+  p {
+    font-size: rem(20);
+    color: $cor-3;
+    pointer-events: none;
+
+    @include mobile {
+      font-size: rem(16);
+    }
+  }
+}
+
+.social {
+  max-width: 400px;
+  border-top: 2px solid lighten($cor-1, 25%);
+  padding-top: rem(20);
+  display: flex;
+  gap: rem(20);
+}

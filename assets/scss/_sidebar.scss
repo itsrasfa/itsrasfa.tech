@@ -24,13 +24,13 @@
     }
   }
 
-  span {
+  svg {
     color: $cor-1;
     font-size: rem(40);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     @include mobile {
       font-size: rem(30);
@@ -39,7 +39,7 @@
 
 }
 
-.nav li.ativo>span {
+.nav li.ativo>svg {
   color: $cor-3;
 }
 

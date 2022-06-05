@@ -15,7 +15,7 @@ body.dark {
   background-color: #64607D;
 }
 
-.dark .sidebar span {
+.dark .sidebar svg {
   color: #D3D0E3;
 }
 
@@ -96,21 +96,21 @@ i {
     max-width: 60px;
   }
 }
-.sidebar span {
+.sidebar svg {
   color: #64607D;
   font-size: 2.5rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 @media (max-width: 450px) {
-  .sidebar span {
+  .sidebar svg {
     font-size: 1.875rem;
   }
 }
 
-.nav li.ativo > span {
+.nav li.ativo > svg {
   color: #434151;
 }
 

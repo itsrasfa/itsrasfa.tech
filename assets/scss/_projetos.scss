@@ -28,6 +28,7 @@
   column-gap: rem(30);
   row-gap: rem(30);
 
+
   @include mobile {
     column-gap: rem(0);
   }
